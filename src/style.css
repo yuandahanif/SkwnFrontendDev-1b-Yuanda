@@ -1,0 +1,35 @@
+:root {
+  --lime-primary: #e5f0b6;
+  --dark-primary: #2f241f;
+  --dark-light: #667085;
+  --white-primary: #ffffff;
+  --brown-primary: #817253;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-primary);
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  color: var(--dark-primary);
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
