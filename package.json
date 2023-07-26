@@ -2,12 +2,12 @@
   "name": "interview-1a",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://yuandahanif.github.io/SkwnFrontendDev-1a-Yuanda/",
+  "homepage": "https://yuandahanif.github.io/SkwnFrontendDev-1b-Yuanda/",
   "scripts": {
     "watch": "tsc -w",
     "serve": "parcel index.html",
     "dev": "concurrently  \"pnpm run serve\"",
-    "build": "parcel build index.html --public-url /SkwnFrontendDev-1a-Yuanda/",
+    "build": "parcel build index.html --public-url /SkwnFrontendDev-1b-Yuanda/",
     "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
