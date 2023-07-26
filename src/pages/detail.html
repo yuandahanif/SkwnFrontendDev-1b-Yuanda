@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script
+      src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"
+      defer
+    ></script>
+    <script src="/src/index.ts" type="module" defer></script>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/styles/detail.css" />
+    <title>Finn</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="header__top">
+          <a href="../../index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <title>arrow-left</title>
+              <path
+                d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"
+              />
+            </svg>
+          </a>
+          <span>Account Finance</span>
+
+          <div class="header__help">
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <title>help-circle</title>
+                <path
+                  d="M15.07,11.25L14.17,12.17C13.45,12.89 13,13.5 13,15H11V14.5C11,13.39 11.45,12.39 12.17,11.67L13.41,10.41C13.78,10.05 14,9.55 14,9C14,7.89 13.1,7 12,7A2,2 0 0,0 10,9H8A4,4 0 0,1 12,5A4,4 0 0,1 16,9C16,9.88 15.64,10.67 15.07,11.25M13,19H11V17H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"
+                /></svg
+            ></a>
+          </div>
+        </div>
+
+        <div class="header__detail">
+          <span>Rp. 26.500.000,-</span>
+          <span>12 june 2022</span>
+        </div>
+      </header>
+
+      <section class="statistics">
+        <div class="card__header">
+          <span>Statistics</span>
+          <a href="#">See All</a>
+        </div>
+        <div id="chartContainer" style="height: 300px; width: 100%"></div>
+      </section>
+
+      <section class="activity">
+        <div class="card__header">
+          <span>History</span>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="activity__list">
+          <div class="activity__card">
+            <div class="activity__card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <title>trending-up</title>
+                <path
+                  d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"
+                />
+              </svg>
+            </div>
+            <div class="activity__card__content">
+              <div class="activity__card__content__top">
+                <div class="activity__card__content__top__left">
+                  <span>Deposit</span>
+                  <span>Rp. 1000</span>
+                </div>
+                <div class="activity__card__content__top__right">
+                  <span>11 March 2022</span>
+                </div>
+              </div>
+              <div class="activity__card__content__bottom">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>map-marker</title>
+                    <path
+                      d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                    />
+                  </svg>
+                  Bank Mandiri ATM</span
+                >
+                <span>11.21 AM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity__card activity__card--alert">
+            <div class="activity__card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <title>trending-down</title>
+                <path
+                  d="M16,18L18.29,15.71L13.41,10.83L9.41,14.83L2,7.41L3.41,6L9.41,12L13.41,8L19.71,14.29L22,12V18H16Z"
+                />
+              </svg>
+            </div>
+
+            <div class="activity__card__content">
+              <div class="activity__card__content__top">
+                <div class="activity__card__content__top__left">
+                  <span>Top Up</span>
+                  <span>Rp. 1000</span>
+                </div>
+                <div class="activity__card__content__top__right">
+                  <span>11 March 2022</span>
+                </div>
+              </div>
+              <div class="activity__card__content__bottom">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>map-marker</title>
+                    <path
+                      d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                    />
+                  </svg>
+                  Bank Mandiri ATM</span
+                >
+                <span>11.21 AM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="activity__card activity__card--alert">
+            <div class="activity__card__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <title>trending-down</title>
+                <path
+                  d="M16,18L18.29,15.71L13.41,10.83L9.41,14.83L2,7.41L3.41,6L9.41,12L13.41,8L19.71,14.29L22,12V18H16Z"
+                />
+              </svg>
+            </div>
+
+            <div class="activity__card__content">
+              <div class="activity__card__content__top">
+                <div class="activity__card__content__top__left">
+                  <span>Top Up</span>
+                  <span>Rp. 1000</span>
+                </div>
+                <div class="activity__card__content__top__right">
+                  <span>11 March 2022</span>
+                </div>
+              </div>
+              <div class="activity__card__content__bottom">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <title>map-marker</title>
+                    <path
+                      d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"
+                    />
+                  </svg>
+                  Bank Mandiri ATM</span
+                >
+                <span>11.21 AM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

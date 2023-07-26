@@ -36,12 +36,30 @@ button {
 
 #app {
   max-width: 425px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 1rem 0;
   background: var(--white-primary);
   position: relative;
+}
+
+/* =========================================== */
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.card__header span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-light);
+}
+.card__header a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: var(--dark-light);
 }
 
 /* =========================================== */

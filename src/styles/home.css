@@ -35,23 +35,6 @@ header {
   object-fit: cover;
 }
 
-.card__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-}
-.card__header span {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--dark-light);
-}
-.card__header a {
-  font-size: 0.8rem;
-  text-decoration: none;
-  color: var(--dark-light);
-}
-
 /* ================== */
 .card,
 .service,

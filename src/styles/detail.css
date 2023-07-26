@@ -1,0 +1,49 @@
+@import url("./components/activity-card.css");
+
+#app {
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(65deg, var(--blue-primary) 0%, cyan 70%);
+  padding: 3rem 1rem 3rem;
+  color: var(--white-primary);
+  border-radius: 1rem 1rem 0 0;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__top svg {
+  height: 20px;
+  width: auto;
+  margin-right: 1rem;
+  color: var(--white-primary);
+}
+
+.header__top .header__help {
+  margin-left: auto;
+}
+
+.header__detail {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 0;
+}
+.header__detail span:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* ======================================= */
+
+.statistics,
+.activity {
+  padding: 1rem;
+}
