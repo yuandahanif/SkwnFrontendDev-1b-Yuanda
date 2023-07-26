@@ -2,8 +2,13 @@
   --lime-primary: #e5f0b6;
   --dark-primary: #2f241f;
   --dark-light: #667085;
+  --dark-light-2: #cfcfcf;
   --white-primary: #ffffff;
   --brown-primary: #817253;
+  --blue-primary: #3570c9;
+  --blue-light: #e4ecff;
+  --red-primary: #ec1a5b;
+  --red-light: #fceaee;
 }
 
 * {
@@ -34,7 +39,7 @@ button {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem 0;
   background: var(--white-primary);
   position: relative;
 }
@@ -47,7 +52,8 @@ nav {
   width: 100%;
   max-width: 425px;
   margin-left: -1rem;
-  background: var(--dark-light);
+  background: var(--white-light);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -55,20 +61,31 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: .5rem 2rem;
+  padding: 1rem 2rem;
   list-style: none;
 }
 
 nav ul li a {
+  display: inline-flex;
   text-decoration: none;
-  color: var(--white-primary);
+  color: var(--dark-light-2);
   font-size: 0.8rem;
+  height: 32px;
+  width: 32px;
 }
-
-nav ul li a img {
-  height: 36px;
-  width: 36px;
-  aspect-ratio: 1 1;
-  border-radius: 36px;
-  overflow: hidden;
+nav ul li a.nav__active {
+  position: relative;
+  /* margin-bottom: 1rem; */
+  color: var(--blue-primary);
+}
+nav ul li a.nav__active::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 2em;
+  background: var(--blue-primary);
+  bottom: 0;
+  left: 50%;
+  translate: -50% 50%;
 }

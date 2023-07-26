@@ -73,7 +73,7 @@ header {
   gap: 1rem;
 }
 .cc {
-    flex-shrink: 0;
+  flex-shrink: 0;
   height: 53.98mm;
   width: 85.6mm;
   background: cyan;
@@ -99,10 +99,13 @@ header {
   font-size: 0.8rem;
   font-weight: 500;
 }
-.service__list ul a img {
-  height: 48px;
-  width: 48px;
+.service__list ul a .service__list__icon {
+  height: 40px;
+  width: 40px;
   aspect-ratio: 1/1;
   border-radius: 52px;
   overflow: hidden;
+  padding: 0.5rem;
+  background: var(--blue-light);
+  color: var(--blue-primary);
 }
